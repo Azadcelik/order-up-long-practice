@@ -1,10 +1,11 @@
 from flask import Flask
 from .config import Configuration
-from .models import db   # New import
+from .models import db, Employee
+# from .models import db   # New import
 from .routes import orders
 from .routes import session
-from flask_login import LoginManager
-from .models import db, Employee
+from flask_login import LoginManager # ignore underline
+
 
 
 
